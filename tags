@@ -1,0 +1,24 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/b4574f0a/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+all	Makefile	/^all: parcial.docx parcial.md  #clean$/;"	t
+parcial.md	Makefile	/^parcial.md: scifile.tex$/;"	t
+parcial.docx	Makefile	/^parcial.docx: parcial.md$/;"	t
+compile	Makefile	/^compile:$/;"	t
+Ackownlegment	scifile.tex	/^\\section*{Ackownlegment}$/;"	s
+Tables	scifile.tex	/^\\section*{Tables}$/;"	s
+Figures	scifile.tex	/^\\section*{Figures}$/;"	s
+fig1	scifile.tex	/^	\\label{fig1}$/;"	l
+Introduction	sections/01_intro.tex	/^\\section*{Introduction}$/;"	s
+Conclusion	sections/05_conclusion.tex	/^\\section*{Conclusion}$/;"	s
+Abstract	sections/00_abstract.tex	/^\\section*{Abstract}$/;"	s
+Material and Methods	sections/02_methods.tex	/^\\section*{Material and Methods}$/;"	s
+Discussion	sections/04_discussion.tex	/^\\section*{Discussion}$/;"	s
+Results	sections/03_results.tex	/^\\section*{Results}$/;"	s
+tab1	sections/03_results.tex	/^	\\label{tab1}$/;"	l
