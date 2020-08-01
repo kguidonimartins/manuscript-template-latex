@@ -1,0 +1,8 @@
+# Instruções para a conversão do arquivo '.tex' para '.md' e depois para '.'
+
+# Como converter '.tex' para '.doc' ou '.docx'
+
+> Abra o prompt de comando (ou bash) e vá para o diretório com o arquivo '.tex';
+> e digite: pandoc -s preamble.tex -o dissertacao.docx
+
+http://plaintext-productivity.net/2-05-how-to-set-up-sublime-text-for-markdown-export-to-word.html

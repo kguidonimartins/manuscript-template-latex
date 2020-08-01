@@ -1,0 +1,129 @@
+\documentclass[12pt]{article}
+
+\usepackage{times}
+\topmargin 0.0cm
+\oddsidemargin 0.2cm
+\textwidth 16cm
+\textheight 21cm
+\footskip 1.0cm
+
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[round]{natbib}
+\bibliographystyle{abbrvnat} % ou usar: rusnat
+
+
+
+
+% \citet{Anderson2011} para produzir Anderson et al. (2011)
+% \citep{Anderson2011} para produzir (Anderson et al. 2011)
+
+
+
+\usepackage{lineno,xcolor} 	% See \linenumbers at the top of content.tex
+% Include your paper's title here
+%\usepackage[backend=biber]{biblatex}
+%\bibliography{library}
+
+\title{My Manuscript Title}
+
+%       Comando      DeclaraÃ§Ã£o
+%  Bold \textbf{...} {\bfseries...}
+%MÃ¡quina de escrever \texttt{...} {\ttfamily...}
+%ItÃ¡lico \textit{...} {\itshape...}
+
+\author
+{John Smith,$^{1\ast}$ Jane Doe,$^{1}$ Joe Scientist$^{2}$\\
+\\
+\normalsize{$^{1}$Department of Chemistry, University of Wherever,}\\
+\normalsize{An Unknown Address, Wherever, ST 00000, USA}\\
+\normalsize{$^{2}$Another Unknown Address, Palookaville, ST 99999, USA}\\
+\\
+\normalsize{$^\ast$To whom correspondence should be addressed; E-mail:  jsmith@wherever.edu.}
+}
+
+% Include the date command, but leave its argument blank.
+
+\date{}
+
+
+
+%%%%%%%%%%%%%%%%% END OF PREAMBLE %%%%%%%%%%%%%%%%
+
+
+
+\begin{document}
+%\maketitle % Insert title
+
+% NOTE: Comment out the lines below to remove line numbers
+  % Running line numbers:
+  \linenumbers
+  \setlength\linenumbersep{15pt}
+  \renewcommand\linenumberfont{\normalfont\footnotesize\sffamily\color{gray}}
+  %\pagewiselinenumbers % Same, but that reset on every page:
+  \modulolinenumbers[1] % Number only every line. Change for fewer.
+
+% Double-space the manuscript.
+
+\baselineskip24pt
+
+% Make the title.
+
+\maketitle
+
+% Place your abstract within the special {sciabstract} environment.
+\input{sections/00_abstract}
+\input{sections/01_intro}
+\input{sections/02_methods}
+\input{sections/03_results}
+\input{sections/04_discussion}
+\input{sections/05_conclusion}
+
+
+\section*{Ackownlegment}
+
+\newpage
+% \section*{References}
+\bibliography{bibliography/library}
+
+%\printbibliography
+
+\newpage
+\section*{Tables}
+% \input{tables/sample_table.tex}
+
+
+
+\newpage
+\section*{Figures}
+
+\begin{figure}[h]
+	\centering % para centralizarmos a figura
+	\includegraphics[width=5cm]{figures/soil.jpg} % leia abaixo
+	\caption{Perfil de solo.}
+	\label{fig1}
+\end{figure}
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
